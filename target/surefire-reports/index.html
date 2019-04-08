@@ -581,31 +581,31 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'cosTest')
-data.setCell(0, 2, 'test.java.CosTest')
-data.setCell(0, 3, 11);
+data.setCell(0, 2, 'test.java.SinTest')
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'cosTest')
-data.setCell(1, 2, 'test.java.SinTest')
-data.setCell(1, 3, 10);
+data.setCell(1, 2, 'test.java.CosTest')
+data.setCell(1, 3, 8);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tgTest')
-data.setCell(2, 2, 'test.java.TgTest')
+data.setCell(2, 1, 'ctgTest')
+data.setCell(2, 2, 'test.java.CtgTest')
 data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ctgTest')
-data.setCell(3, 2, 'test.java.CtgTest')
+data.setCell(3, 1, 'divTest')
+data.setCell(3, 2, 'test.java.isPositiveTest')
 data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testDivideByZero')
-data.setCell(4, 2, 'test.java.DivLongTest')
+data.setCell(4, 1, 'divTest')
+data.setCell(4, 2, 'test.java.MultLongTest')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'ctgTest')
 data.setCell(5, 2, 'test.java.PowTest')
 data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'divTest')
-data.setCell(6, 2, 'test.java.isPositiveTest')
+data.setCell(6, 1, 'testDivideByZero')
+data.setCell(6, 2, 'test.java.DivLongTest')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'divTest')
@@ -616,22 +616,22 @@ data.setCell(8, 1, 'divTest')
 data.setCell(8, 2, 'test.java.multTest')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'divTest')
-data.setCell(9, 2, 'test.java.MultLongTest')
+data.setCell(9, 1, 'sqrtTest')
+data.setCell(9, 2, 'test.java.SqrtTest')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'sqrtTest')
-data.setCell(10, 2, 'test.java.SqrtTest')
+data.setCell(10, 1, 'cosTest')
+data.setCell(10, 2, 'test.java.SubTest')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'cosTest')
-data.setCell(11, 2, 'test.java.SubTest')
+data.setCell(11, 1, 'tgTest')
+data.setCell(11, 2, 'test.java.TgTest')
 data.setCell(11, 3, 0);
 window.suiteTableData['Parallel_tests']= { tableData: data, tableDiv: 'times-div-Parallel_tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 ms</span>
+              <span class="suite-total-time">Total running time: 21 ms</span>
               <div id="times-div-Parallel_tests">
               </div> <!-- times-div-Parallel_tests -->
             </div> <!-- times-div -->
@@ -657,6 +657,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">test.java.SinTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cosTest(4.0, -0.7568024953079282)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">test.java.CosTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
@@ -666,17 +673,10 @@ return data;
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.java.SinTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">cosTest(4.0, -0.7568024953079282)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">test.java.CtgTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ctgTest(5.0, 0.9999092042625951)</span>
-                <span class="method-start">129 ms</span>
+                <span class="method-start">79 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -685,35 +685,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testDivideByZero</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.isPositiveTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">divTest(6, true)</span>
-                <span class="method-start">139 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.isNegativeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">divTest(0, false)</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.multTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">divTest(2.0, 2.0, 4.0)</span>
-                <span class="method-start">150 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.java.MultLongTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">divTest(4, 2, 8)</span>
-                <span class="method-start">154 ms</span>
+                <span class="method-start">98 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -722,21 +715,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ctgTest(2.0, 5.4, 42.22425314473263)</span>
-                <span class="method-start">157 ms</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.MultLongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(4, 2, 8)</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.SqrtTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sqrtTest(9.0, 3.0)</span>
-                <span class="method-start">163 ms</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.SubTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cosTest(-4.34, 2.75, -7.09)</span>
-                <span class="method-start">169 ms</span>
+                <span class="method-start">112 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -745,7 +745,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tgTest(45.0, 1.6197751905438615)</span>
-                <span class="method-start">173 ms</span>
+                <span class="method-start">117 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -2,12 +2,12 @@
 <testng-results total="12" passed="8" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-08T10:14:54Z" name="Parallel tests" finished-at="2019-04-08T10:14:55Z" duration-ms="194">
+  <suite started-at="2019-04-08T12:06:44Z" name="Parallel tests" finished-at="2019-04-08T12:06:44Z" duration-ms="130">
     <groups>
     </groups>
-    <test started-at="2019-04-08T10:14:54Z" name="sin test" finished-at="2019-04-08T10:14:54Z" duration-ms="32">
+    <test started-at="2019-04-08T12:06:44Z" name="sin test" finished-at="2019-04-08T12:06:44Z" duration-ms="22">
       <class name="test.java.SinTest">
-        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.SinTest@5158b42f]" started-at="2019-04-08T13:14:54Z" name="cosTest" finished-at="2019-04-08T13:14:54Z" duration-ms="10" status="PASS">
+        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.SinTest@5158b42f]" started-at="2019-04-08T15:06:44Z" name="cosTest" finished-at="2019-04-08T15:06:44Z" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,9 +25,9 @@
         </test-method> <!-- cosTest -->
       </class> <!-- test.java.SinTest -->
     </test> <!-- sin test -->
-    <test started-at="2019-04-08T10:14:54Z" name="cos test" finished-at="2019-04-08T10:14:54Z" duration-ms="39">
+    <test started-at="2019-04-08T12:06:44Z" name="cos test" finished-at="2019-04-08T12:06:44Z" duration-ms="30">
       <class name="test.java.CosTest">
-        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.CosTest@15ff3e9e]" started-at="2019-04-08T13:14:54Z" name="cosTest" finished-at="2019-04-08T13:14:54Z" duration-ms="11" status="FAIL">
+        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.CosTest@15ff3e9e]" started-at="2019-04-08T15:06:44Z" name="cosTest" finished-at="2019-04-08T15:06:44Z" duration-ms="8" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -79,9 +79,9 @@
         </test-method> <!-- cosTest -->
       </class> <!-- test.java.CosTest -->
     </test> <!-- cos test -->
-    <test started-at="2019-04-08T10:14:55Z" name="ctg test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+    <test started-at="2019-04-08T12:06:44Z" name="ctg test" finished-at="2019-04-08T12:06:44Z" duration-ms="2">
       <class name="test.java.CtgTest">
-        <test-method signature="ctgTest(double, double)[pri:0, instance:test.java.CtgTest@3a93b025]" started-at="2019-04-08T13:14:55Z" name="ctgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="PASS">
+        <test-method signature="ctgTest(double, double)[pri:0, instance:test.java.CtgTest@3a93b025]" started-at="2019-04-08T15:06:44Z" name="ctgTest" finished-at="2019-04-08T15:06:44Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,9 +99,9 @@
         </test-method> <!-- ctgTest -->
       </class> <!-- test.java.CtgTest -->
     </test> <!-- ctg test -->
-    <test started-at="2019-04-08T10:14:55Z" name="div long test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+    <test started-at="2019-04-08T12:06:44Z" name="div long test" finished-at="2019-04-08T12:06:44Z" duration-ms="2">
       <class name="test.java.DivLongTest">
-        <test-method signature="testDivideByZero()[pri:0, instance:test.java.DivLongTest@1d2adfbe]" started-at="2019-04-08T13:14:55Z" name="testDivideByZero" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="FAIL">
+        <test-method signature="testDivideByZero()[pri:0, instance:test.java.DivLongTest@1d2adfbe]" started-at="2019-04-08T15:06:44Z" name="testDivideByZero" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestException">
             <message>
               <![CDATA[
@@ -151,9 +151,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- testDivideByZero -->
       </class> <!-- test.java.DivLongTest -->
     </test> <!-- div long test -->
-    <test started-at="2019-04-08T10:14:55Z" name="isPositive test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+    <test started-at="2019-04-08T12:06:44Z" name="isPositive test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.isPositiveTest">
-        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isPositiveTest@131774fe]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isPositiveTest@131774fe]" started-at="2019-04-08T15:06:44Z" name="divTest" finished-at="2019-04-08T15:06:44Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,9 +171,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- divTest -->
       </class> <!-- test.java.isPositiveTest -->
     </test> <!-- isPositive test -->
-    <test started-at="2019-04-08T10:14:55Z" name="isNegative test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+    <test started-at="2019-04-08T12:06:44Z" name="isNegative test" finished-at="2019-04-08T12:06:44Z" duration-ms="2">
       <class name="test.java.isNegativeTest">
-        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isNegativeTest@5c33f1a9]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isNegativeTest@5c33f1a9]" started-at="2019-04-08T15:06:44Z" name="divTest" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,9 +191,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- divTest -->
       </class> <!-- test.java.isNegativeTest -->
     </test> <!-- isNegative test -->
-    <test started-at="2019-04-08T10:14:55Z" name="mult double test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+    <test started-at="2019-04-08T12:06:44Z" name="mult double test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.multTest">
-        <test-method signature="divTest(double, double, double)[pri:0, instance:test.java.multTest@49139829]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="divTest(double, double, double)[pri:0, instance:test.java.multTest@49139829]" started-at="2019-04-08T15:06:44Z" name="divTest" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,9 +216,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- divTest -->
       </class> <!-- test.java.multTest -->
     </test> <!-- mult double test -->
-    <test started-at="2019-04-08T10:14:55Z" name="mult long test" finished-at="2019-04-08T10:14:55Z" duration-ms="0">
+    <test started-at="2019-04-08T12:06:44Z" name="mult long test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.MultLongTest">
-        <test-method signature="divTest(long, long, long)[pri:0, instance:test.java.MultLongTest@3349e9bb]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="divTest(long, long, long)[pri:0, instance:test.java.MultLongTest@3349e9bb]" started-at="2019-04-08T15:06:44Z" name="divTest" finished-at="2019-04-08T15:06:44Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,9 +241,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- divTest -->
       </class> <!-- test.java.MultLongTest -->
     </test> <!-- mult long test -->
-    <test started-at="2019-04-08T10:14:55Z" name="pow test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+    <test started-at="2019-04-08T12:06:44Z" name="pow test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.PowTest">
-        <test-method signature="ctgTest(double, double, double)[pri:0, instance:test.java.PowTest@18078bef]" started-at="2019-04-08T13:14:55Z" name="ctgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="FAIL">
+        <test-method signature="ctgTest(double, double, double)[pri:0, instance:test.java.PowTest@18078bef]" started-at="2019-04-08T15:06:44Z" name="ctgTest" finished-at="2019-04-08T15:06:44Z" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -300,9 +300,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- ctgTest -->
       </class> <!-- test.java.PowTest -->
     </test> <!-- pow test -->
-    <test started-at="2019-04-08T10:14:55Z" name="sqrt test" finished-at="2019-04-08T10:14:55Z" duration-ms="0">
+    <test started-at="2019-04-08T12:06:44Z" name="sqrt test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.SqrtTest">
-        <test-method signature="sqrtTest(double, double)[pri:0, instance:test.java.SqrtTest@4135c3b]" started-at="2019-04-08T13:14:55Z" name="sqrtTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="sqrtTest(double, double)[pri:0, instance:test.java.SqrtTest@4135c3b]" started-at="2019-04-08T15:06:44Z" name="sqrtTest" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -320,9 +320,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- sqrtTest -->
       </class> <!-- test.java.SqrtTest -->
     </test> <!-- sqrt test -->
-    <test started-at="2019-04-08T10:14:55Z" name="sub double test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+    <test started-at="2019-04-08T12:06:44Z" name="sub double test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.SubTest">
-        <test-method signature="cosTest(double, double, double)[pri:0, instance:test.java.SubTest@459e9125]" started-at="2019-04-08T13:14:55Z" name="cosTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+        <test-method signature="cosTest(double, double, double)[pri:0, instance:test.java.SubTest@459e9125]" started-at="2019-04-08T15:06:44Z" name="cosTest" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -345,9 +345,9 @@ Caused by: java.lang.NumberFormatException: Attempt to divide by zero
         </test-method> <!-- cosTest -->
       </class> <!-- test.java.SubTest -->
     </test> <!-- sub double test -->
-    <test started-at="2019-04-08T10:14:55Z" name="tg test" finished-at="2019-04-08T10:14:55Z" duration-ms="3">
+    <test started-at="2019-04-08T12:06:44Z" name="tg test" finished-at="2019-04-08T12:06:44Z" duration-ms="1">
       <class name="test.java.TgTest">
-        <test-method signature="tgTest(double, double)[pri:0, instance:test.java.TgTest@48f2bd5b]" started-at="2019-04-08T13:14:55Z" name="tgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="2" status="FAIL">
+        <test-method signature="tgTest(double, double)[pri:0, instance:test.java.TgTest@48f2bd5b]" started-at="2019-04-08T15:06:44Z" name="tgTest" finished-at="2019-04-08T15:06:44Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
