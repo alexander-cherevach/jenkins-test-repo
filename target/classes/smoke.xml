@@ -1,0 +1,94 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel tests" parallel="tests" thread-count="2" >
+
+   <test name = "cos test">
+   <parameter name ="x" value ="1"/>
+   <parameter name ="res" value ="0.5403023058681398"/>
+      <classes>
+         <class name = "test.java.CosTest"/>
+      </classes>
+   </test>
+   <test name = "sin test">
+   <parameter name ="x" value ="4"/>
+   <parameter name ="res" value ="-0.7568024953079282"/>
+      <classes>
+         <class name = "test.java.SinTest"/>
+      </classes>
+   </test>
+   <test name = "ctg test">
+   <parameter name ="x" value ="5"/>
+   <parameter name ="res" value ="0.9999092042625951"/>
+      <classes>
+         <class name = "test.java.CtgTest"/>
+      </classes>
+   </test>
+   <test name = "div long test">
+   <parameter name ="x" value ="6"/>
+   <parameter name ="y" value ="3"/>
+   <parameter name ="res" value ="2"/>
+      <classes>
+         <class name = "test.java.DivLongTest"/>
+      </classes>
+   </test>
+   <test name = "isPositive test">
+   <parameter name ="x" value ="6"/>
+   <parameter name ="res" value ="true"/>
+      <classes>
+         <class name = "test.java.isPositiveTest"/>
+      </classes>
+   </test>
+   <test name = "isNegative test">
+   <parameter name ="x" value ="0"/>
+   <parameter name ="res" value ="false"/>
+      <classes>
+         <class name = "test.java.isNegativeTest"/>
+      </classes>
+   </test>
+   <test name = "mult double test">
+   <parameter name ="x" value ="2d"/>
+   <parameter name ="y" value ="2d"/>
+   <parameter name ="res" value ="4d"/>
+      <classes>
+         <class name = "test.java.multTest"/>
+      </classes>
+   </test>
+    <test name = "mult long test">
+   <parameter name ="x" value ="4"/>
+   <parameter name ="y" value ="2"/>
+   <parameter name ="res" value ="8"/>
+      <classes>
+         <class name = "test.java.MultLongTest"/>
+      </classes>
+   </test>
+   <test name = "pow test">
+   <parameter name ="x" value ="2.0"/>
+   <parameter name ="y" value ="5.4"/>
+   <parameter name ="res" value ="42.22425314473263"/>
+      <classes>
+         <class name = "test.java.PowTest"/>
+      </classes>
+   </test>
+    <test name = "sqrt test">
+   <parameter name ="x" value ="9"/>
+   <parameter name ="res" value ="3"/>
+      <classes>
+         <class name = "test.java.SqrtTest"/>
+      </classes>
+   </test>
+   <test name = "sub double test">
+   <parameter name ="x" value ="-4.34"/>
+   <parameter name ="y" value ="2.75"/>
+   <parameter name ="res" value ="-7.09"/>
+      <classes>
+         <class name = "test.java.SubTest"/>
+      </classes>
+   </test>
+   <test name = "tg test">
+   <parameter name ="x" value ="45.0"/>
+   <parameter name ="res" value ="1.6197751905438615"/>
+      <classes>
+         <class name = "test.java.TgTest"/>
+      </classes>
+   </test>
+   </suite>

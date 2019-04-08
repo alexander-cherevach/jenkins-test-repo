@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Parallel tests]" verbose="0">
+  <parameter name="res" value="1.6197751905438615"/>
+  <parameter name="x" value="45.0"/>
+  <parameter name="y" value="2.75"/>
+  <test parallel="tests" name="cos test(failed)">
+    <parameter name="res" value="0.5403023058681398"/>
+    <parameter name="x" value="1"/>
+    <classes>
+      <class name="test.java.CosTest">
+        <methods>
+          <include name="cosTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.java.CosTest -->
+    </classes>
+  </test> <!-- cos test(failed) -->
+  <test parallel="tests" name="div long test(failed)">
+    <parameter name="res" value="2"/>
+    <parameter name="x" value="6"/>
+    <parameter name="y" value="3"/>
+    <classes>
+      <class name="test.java.DivLongTest">
+        <methods>
+          <include name="testDivideByZero"/>
+        </methods>
+      </class> <!-- test.java.DivLongTest -->
+    </classes>
+  </test> <!-- div long test(failed) -->
+  <test parallel="tests" name="pow test(failed)">
+    <parameter name="res" value="42.22425314473263"/>
+    <parameter name="x" value="2.0"/>
+    <parameter name="y" value="5.4"/>
+    <classes>
+      <class name="test.java.PowTest">
+        <methods>
+          <include name="ctgTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.java.PowTest -->
+    </classes>
+  </test> <!-- pow test(failed) -->
+  <test parallel="tests" name="tg test(failed)">
+    <parameter name="res" value="1.6197751905438615"/>
+    <parameter name="x" value="45.0"/>
+    <classes>
+      <class name="test.java.TgTest">
+        <methods>
+          <include name="tgTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.java.TgTest -->
+    </classes>
+  </test> <!-- tg test(failed) -->
+</suite> <!-- Failed suite [Parallel tests] -->

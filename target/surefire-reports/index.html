@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Parallel_tests" class="navigator-link">
+              <span class="suite-name border-failed">Parallel tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Parallel_tests" class="navigator-link ">
+                    <span>D:\Applications\Eclipse_workspace\TestCi\smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Parallel_tests" class="navigator-link ">
+                    <span class="test-stats">12 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Parallel_tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Parallel_tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Parallel_tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Parallel_tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Parallel_tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 4 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_tests" class="hide-methods failed suite-Parallel_tests"> (hide)</a> <!-- hide-methods failed suite-Parallel_tests -->
+                      <a href="#" panel-name="suite-Parallel_tests" class="show-methods failed suite-Parallel_tests"> (show)</a> <!-- show-methods failed suite-Parallel_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Parallel_tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.CosTest" class="method navigator-link" hash-for-method="cosTest(1.0, 0.5403023058681398)">cosTest(1.0, 0.5403023058681398)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.PowTest" class="method navigator-link" hash-for-method="ctgTest(2.0, 5.4, 42.22425314473263)">ctgTest(2.0, 5.4, 42.22425314473263)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.DivLongTest" class="method navigator-link" hash-for-method="testDivideByZero">testDivideByZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.TgTest" class="method navigator-link" hash-for-method="tgTest(45.0, 1.6197751905438615)">tgTest(45.0, 1.6197751905438615)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parallel_tests" class="hide-methods passed suite-Parallel_tests"> (hide)</a> <!-- hide-methods passed suite-Parallel_tests -->
+                      <a href="#" panel-name="suite-Parallel_tests" class="show-methods passed suite-Parallel_tests"> (show)</a> <!-- show-methods passed suite-Parallel_tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Parallel_tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.SinTest" class="method navigator-link" hash-for-method="cosTest(4.0, -0.7568024953079282)">cosTest(4.0, -0.7568024953079282)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.SubTest" class="method navigator-link" hash-for-method="cosTest(-4.34, 2.75, -7.09)">cosTest(-4.34, 2.75, -7.09)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.CtgTest" class="method navigator-link" hash-for-method="ctgTest(5.0, 0.9999092042625951)">ctgTest(5.0, 0.9999092042625951)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.isPositiveTest" class="method navigator-link" hash-for-method="divTest(6, true)">divTest(6, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.isNegativeTest" class="method navigator-link" hash-for-method="divTest(0, false)">divTest(0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.multTest" class="method navigator-link" hash-for-method="divTest(2.0, 2.0, 4.0)">divTest(2.0, 2.0, 4.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.MultLongTest" class="method navigator-link" hash-for-method="divTest(4, 2, 8)">divTest(4, 2, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_tests" title="test.java.SqrtTest" class="method navigator-link" hash-for-method="sqrtTest(9.0, 3.0)">sqrtTest(9.0, 3.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parallel_tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parallel_tests" class="panel Parallel_tests">
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.CosTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(1.0, 0.5403023058681398)">
+                  </a> <!-- cosTest(1.0, 0.5403023058681398) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(1.0, 0.5403023058681398)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
+	at test.java.CosTest.cosTest(CosTest.java:16)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.TgTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tgTest(45.0, 1.6197751905438615)">
+                  </a> <!-- tgTest(45.0, 1.6197751905438615) -->
+                  <span class="method-name">tgTest</span>
+                  <span class="parameters">(45.0, 1.6197751905438615)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.6197751905438615] but found [1.0]
+	at test.java.TgTest.tgTest(TgTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.PowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ctgTest(2.0, 5.4, 42.22425314473263)">
+                  </a> <!-- ctgTest(2.0, 5.4, 42.22425314473263) -->
+                  <span class="method-name">ctgTest</span>
+                  <span class="parameters">(2.0, 5.4, 42.22425314473263)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [42.22425314473263] but found [32.0]
+	at test.java.PowTest.ctgTest(PowTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.DivLongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivideByZero">
+                  </a> <!-- testDivideByZero -->
+                  <span class="method-name">testDivideByZero</span>
+                  <div class="stack-trace">org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	... 12 more
+Caused by: java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at test.java.DivLongTest.testDivideByZero(DivLongTest.java:15)
+	... 14 more
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-failed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.multTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(2.0, 2.0, 4.0)">
+                  </a> <!-- divTest(2.0, 2.0, 4.0) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(2.0, 2.0, 4.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.MultLongTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(4, 2, 8)">
+                  </a> <!-- divTest(4, 2, 8) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(4, 2, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.isPositiveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(6, true)">
+                  </a> <!-- divTest(6, true) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(6, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.isNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divTest(0, false)">
+                  </a> <!-- divTest(0, false) -->
+                  <span class="method-name">divTest</span>
+                  <span class="parameters">(0, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.SubTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(-4.34, 2.75, -7.09)">
+                  </a> <!-- cosTest(-4.34, 2.75, -7.09) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(-4.34, 2.75, -7.09)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.SinTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosTest(4.0, -0.7568024953079282)">
+                  </a> <!-- cosTest(4.0, -0.7568024953079282) -->
+                  <span class="method-name">cosTest</span>
+                  <span class="parameters">(4.0, -0.7568024953079282)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.CtgTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ctgTest(5.0, 0.9999092042625951)">
+                  </a> <!-- ctgTest(5.0, 0.9999092042625951) -->
+                  <span class="method-name">ctgTest</span>
+                  <span class="parameters">(5.0, 0.9999092042625951)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+          <div class="suite-Parallel_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.SqrtTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sqrtTest(9.0, 3.0)">
+                  </a> <!-- sqrtTest(9.0, 3.0) -->
+                  <span class="method-name">sqrtTest</span>
+                  <span class="parameters">(9.0, 3.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_tests-class-passed -->
+        </div> <!-- panel Parallel_tests -->
+        <div panel-name="test-xml-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Applications\Eclipse_workspace\TestCi\smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Parallel tests&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;cos test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;0.5403023058681398&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;1&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.CosTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- cos test --&gt;
+  &lt;test name=&quot;sin test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;-0.7568024953079282&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;4&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.SinTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sin test --&gt;
+  &lt;test name=&quot;ctg test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;0.9999092042625951&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;5&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.CtgTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ctg test --&gt;
+  &lt;test name=&quot;div long test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;6&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;3&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.DivLongTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- div long test --&gt;
+  &lt;test name=&quot;isPositive test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;6&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.isPositiveTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- isPositive test --&gt;
+  &lt;test name=&quot;isNegative test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;false&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;0&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.isNegativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- isNegative test --&gt;
+  &lt;test name=&quot;mult double test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;4d&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;2d&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2d&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.multTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mult double test --&gt;
+  &lt;test name=&quot;mult long test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;8&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;4&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.MultLongTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mult long test --&gt;
+  &lt;test name=&quot;pow test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;42.22425314473263&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;2.0&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;5.4&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.PowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pow test --&gt;
+  &lt;test name=&quot;sqrt test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;3&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;9&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.SqrtTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sqrt test --&gt;
+  &lt;test name=&quot;sub double test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;-7.09&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;-4.34&quot;/&gt;
+    &lt;parameter name=&quot;y&quot; value=&quot;2.75&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.SubTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sub double test --&gt;
+  &lt;test name=&quot;tg test&quot;&gt;
+    &lt;parameter name=&quot;res&quot; value=&quot;1.6197751905438615&quot;/&gt;
+    &lt;parameter name=&quot;x&quot; value=&quot;45.0&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.TgTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- tg test --&gt;
+&lt;/suite&gt; &lt;!-- Parallel tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">cos test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sin test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ctg test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">div long test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">isPositive test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">isNegative test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mult double test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mult long test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pow test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sqrt test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sub double test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">tg test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parallel_tests');
+function tableData_Parallel_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'cosTest')
+data.setCell(0, 2, 'test.java.CosTest')
+data.setCell(0, 3, 11);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'cosTest')
+data.setCell(1, 2, 'test.java.SinTest')
+data.setCell(1, 3, 10);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tgTest')
+data.setCell(2, 2, 'test.java.TgTest')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ctgTest')
+data.setCell(3, 2, 'test.java.CtgTest')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDivideByZero')
+data.setCell(4, 2, 'test.java.DivLongTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ctgTest')
+data.setCell(5, 2, 'test.java.PowTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'divTest')
+data.setCell(6, 2, 'test.java.isPositiveTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'divTest')
+data.setCell(7, 2, 'test.java.isNegativeTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'divTest')
+data.setCell(8, 2, 'test.java.multTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'divTest')
+data.setCell(9, 2, 'test.java.MultLongTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'sqrtTest')
+data.setCell(10, 2, 'test.java.SqrtTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'cosTest')
+data.setCell(11, 2, 'test.java.SubTest')
+data.setCell(11, 3, 0);
+window.suiteTableData['Parallel_tests']= { tableData: data, tableDiv: 'times-div-Parallel_tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 ms</span>
+              <div id="times-div-Parallel_tests">
+              </div> <!-- times-div-Parallel_tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parallel tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parallel_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.CosTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosTest(1.0, 0.5403023058681398)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.SinTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cosTest(4.0, -0.7568024953079282)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.CtgTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ctgTest(5.0, 0.9999092042625951)</span>
+                <span class="method-start">129 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.DivLongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDivideByZero</span>
+                <span class="method-start">132 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.isPositiveTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(6, true)</span>
+                <span class="method-start">139 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.isNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(0, false)</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.multTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(2.0, 2.0, 4.0)</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.MultLongTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">divTest(4, 2, 8)</span>
+                <span class="method-start">154 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.PowTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ctgTest(2.0, 5.4, 42.22425314473263)</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.SqrtTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sqrtTest(9.0, 3.0)</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.SubTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cosTest(-4.34, 2.75, -7.09)</span>
+                <span class="method-start">169 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.TgTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tgTest(45.0, 1.6197751905438615)</span>
+                <span class="method-start">173 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

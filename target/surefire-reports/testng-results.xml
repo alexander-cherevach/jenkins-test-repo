@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="12" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-04-08T10:14:54Z" name="Parallel tests" finished-at="2019-04-08T10:14:55Z" duration-ms="194">
+    <groups>
+    </groups>
+    <test started-at="2019-04-08T10:14:54Z" name="sin test" finished-at="2019-04-08T10:14:54Z" duration-ms="32">
+      <class name="test.java.SinTest">
+        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.SinTest@5158b42f]" started-at="2019-04-08T13:14:54Z" name="cosTest" finished-at="2019-04-08T13:14:54Z" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-0.7568024953079282]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cosTest -->
+      </class> <!-- test.java.SinTest -->
+    </test> <!-- sin test -->
+    <test started-at="2019-04-08T10:14:54Z" name="cos test" finished-at="2019-04-08T10:14:54Z" duration-ms="39">
+      <class name="test.java.CosTest">
+        <test-method signature="cosTest(double, double)[pri:0, instance:test.java.CosTest@15ff3e9e]" started-at="2019-04-08T13:14:54Z" name="cosTest" finished-at="2019-04-08T13:14:54Z" duration-ms="11" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.5403023058681398]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.5403023058681398] but found [0.8414709848078965]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at test.java.CosTest.cosTest(CosTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cosTest -->
+      </class> <!-- test.java.CosTest -->
+    </test> <!-- cos test -->
+    <test started-at="2019-04-08T10:14:55Z" name="ctg test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+      <class name="test.java.CtgTest">
+        <test-method signature="ctgTest(double, double)[pri:0, instance:test.java.CtgTest@3a93b025]" started-at="2019-04-08T13:14:55Z" name="ctgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.9999092042625951]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ctgTest -->
+      </class> <!-- test.java.CtgTest -->
+    </test> <!-- ctg test -->
+    <test started-at="2019-04-08T10:14:55Z" name="div long test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+      <class name="test.java.DivLongTest">
+        <test-method signature="testDivideByZero()[pri:0, instance:test.java.DivLongTest@1d2adfbe]" started-at="2019-04-08T13:14:55Z" name="testDivideByZero" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="FAIL">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1245)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	... 12 more
+Caused by: java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at test.java.DivLongTest.testDivideByZero(DivLongTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	... 14 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideByZero -->
+      </class> <!-- test.java.DivLongTest -->
+    </test> <!-- div long test -->
+    <test started-at="2019-04-08T10:14:55Z" name="isPositive test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+      <class name="test.java.isPositiveTest">
+        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isPositiveTest@131774fe]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divTest -->
+      </class> <!-- test.java.isPositiveTest -->
+    </test> <!-- isPositive test -->
+    <test started-at="2019-04-08T10:14:55Z" name="isNegative test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+      <class name="test.java.isNegativeTest">
+        <test-method signature="divTest(long, boolean)[pri:0, instance:test.java.isNegativeTest@5c33f1a9]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divTest -->
+      </class> <!-- test.java.isNegativeTest -->
+    </test> <!-- isNegative test -->
+    <test started-at="2019-04-08T10:14:55Z" name="mult double test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+      <class name="test.java.multTest">
+        <test-method signature="divTest(double, double, double)[pri:0, instance:test.java.multTest@49139829]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divTest -->
+      </class> <!-- test.java.multTest -->
+    </test> <!-- mult double test -->
+    <test started-at="2019-04-08T10:14:55Z" name="mult long test" finished-at="2019-04-08T10:14:55Z" duration-ms="0">
+      <class name="test.java.MultLongTest">
+        <test-method signature="divTest(long, long, long)[pri:0, instance:test.java.MultLongTest@3349e9bb]" started-at="2019-04-08T13:14:55Z" name="divTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divTest -->
+      </class> <!-- test.java.MultLongTest -->
+    </test> <!-- mult long test -->
+    <test started-at="2019-04-08T10:14:55Z" name="pow test" finished-at="2019-04-08T10:14:55Z" duration-ms="2">
+      <class name="test.java.PowTest">
+        <test-method signature="ctgTest(double, double, double)[pri:0, instance:test.java.PowTest@18078bef]" started-at="2019-04-08T13:14:55Z" name="ctgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[42.22425314473263]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [42.22425314473263] but found [32.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [42.22425314473263] but found [32.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at test.java.PowTest.ctgTest(PowTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ctgTest -->
+      </class> <!-- test.java.PowTest -->
+    </test> <!-- pow test -->
+    <test started-at="2019-04-08T10:14:55Z" name="sqrt test" finished-at="2019-04-08T10:14:55Z" duration-ms="0">
+      <class name="test.java.SqrtTest">
+        <test-method signature="sqrtTest(double, double)[pri:0, instance:test.java.SqrtTest@4135c3b]" started-at="2019-04-08T13:14:55Z" name="sqrtTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sqrtTest -->
+      </class> <!-- test.java.SqrtTest -->
+    </test> <!-- sqrt test -->
+    <test started-at="2019-04-08T10:14:55Z" name="sub double test" finished-at="2019-04-08T10:14:55Z" duration-ms="1">
+      <class name="test.java.SubTest">
+        <test-method signature="cosTest(double, double, double)[pri:0, instance:test.java.SubTest@459e9125]" started-at="2019-04-08T13:14:55Z" name="cosTest" finished-at="2019-04-08T13:14:55Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-4.34]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.75]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-7.09]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cosTest -->
+      </class> <!-- test.java.SubTest -->
+    </test> <!-- sub double test -->
+    <test started-at="2019-04-08T10:14:55Z" name="tg test" finished-at="2019-04-08T10:14:55Z" duration-ms="3">
+      <class name="test.java.TgTest">
+        <test-method signature="tgTest(double, double)[pri:0, instance:test.java.TgTest@48f2bd5b]" started-at="2019-04-08T13:14:55Z" name="tgTest" finished-at="2019-04-08T13:14:55Z" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.6197751905438615]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1.6197751905438615] but found [1.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1.6197751905438615] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at test.java.TgTest.tgTest(TgTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tgTest -->
+      </class> <!-- test.java.TgTest -->
+    </test> <!-- tg test -->
+  </suite> <!-- Parallel tests -->
+</testng-results>
