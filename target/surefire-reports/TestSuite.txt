@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.741 s <<< FAILURE! - in TestSuite
-cosTest(test.java.CosTest)  Time elapsed: 0.016 s  <<< FAILURE!
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.995 s <<< FAILURE! - in TestSuite
+cosTest(test.java.CosTest)  Time elapsed: 0.02 s  <<< FAILURE!
 java.lang.AssertionError: expected [0.5403023058681398] but found [0.8414709848078965]
 	at test.java.CosTest.cosTest(CosTest.java:16)
 
-testDivideByZero(test.java.DivLongTest)  Time elapsed: 0.001 s  <<< FAILURE!
+testDivideByZero(test.java.DivLongTest)  Time elapsed: 0.003 s  <<< FAILURE!
 org.testng.TestException: 
 
 Expected exception java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
@@ -16,7 +16,7 @@ ctgTest(test.java.PowTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError: expected [42.22425314473263] but found [32.0]
 	at test.java.PowTest.ctgTest(PowTest.java:15)
 
-tgTest(test.java.TgTest)  Time elapsed: 0 s  <<< FAILURE!
+tgTest(test.java.TgTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: expected [1.6197751905438615] but found [1.0]
 	at test.java.TgTest.tgTest(TgTest.java:15)
 
